@@ -18,14 +18,28 @@
 
       <!-- ADD TASK FORM -->
       <div class="card card-body">
-        <form action="save_task.php" method="POST">
+        <form action="guardar.php" method="POST">
           <div class="form-group">
-            <input type="text" name="title" class="form-control" placeholder="Task Title" autofocus>
+            <input type="text" name="nombre" class="form-control" placeholder="Ingrese su Nombre" autofocus>
           </div>
           <div class="form-group">
-            <textarea name="description" rows="2" class="form-control" placeholder="Task Description"></textarea>
+            <input type="text" name="apellido" class="form-control" placeholder="Ingrese sus Apellidos" autofocus>
           </div>
-          <input type="submit" name="save_task" class="btn btn-success btn-block" value="Save Task">
+          <div class="form-group">
+            <input type="text" name="dni" class="form-control" placeholder="ingrese su dni" autofocus>
+          </div>
+          <div class="form-group">
+            <input type="text" name="correo" class="form-control" placeholder="ingrese su Correo" autofocus>
+          </div>
+          <div class="form-group">
+            <select class="form-control" name="sexo" aria-label="Default select example">
+              <option selected>Ingrese su Sexo</option>
+              <option value="masculino">masculino</option>
+              <option value="femenino">femenino</option>
+              
+            </select>
+          </div>
+          <input type="submit" name="guardar" class="btn btn-success btn-block"  value="guardar alumno">
         </form>
       </div>
     </div>
@@ -33,6 +47,7 @@
       <table class="table table-bordered">
         <thead>
           <tr>
+            <th>ID</th>
             <th>Nombre</th>
             <th>Apellidos</th>
             <th>DNI</th>
