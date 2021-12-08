@@ -43,13 +43,15 @@
 
           <?php
           $query = "SELECT * FROM task";
-          $result_tasks = mysqli_query($conn, $query);    
+          $resultados = mysqli_query($conn, $query);    
 
-          while($row = mysqli_fetch_assoc($result_tasks)) { ?>
+          while($row = mysqli_fetch_assoc($resutados)) { ?>
           <tr>
-            <td><?php echo $row['title']; ?></td>
-            <td><?php echo $row['description']; ?></td>
-            <td><?php echo $row['created_at']; ?></td>
+            <td><?php echo $row['nombre']; ?></td>
+            <td><?php echo $row['apellido']; ?></td>
+            <td><?php echo $row['dni']; ?></td>
+            <td><?php echo $row['correo']; ?></td>
+            <td><?php echo $row['sexo']; ?></td>
             <td>
               <a href="edit.php?id=<?php echo $row['id']?>" class="btn btn-secondary">
                 <i class="fas fa-marker"></i>
@@ -67,3 +69,12 @@
 </main>
 
 <?php include('includes/footer.php'); ?>
+CREATE TABLE `estudiante` (
+  `id` int(11) NOT NULL,
+  `nombre` varchar(50) COLLATE utf8_spanish2_ci NOT NULL,
+  `apellido` varchar(50) COLLATE utf8_spanish2_ci NOT NULL,
+  `dni` varchar(8) COLLATE utf8_spanish2_ci NOT NULL,
+  `correo` varchar(50) COLLATE utf8_spanish2_ci NOT NULL,
+  `sexo` varchar(10) COLLATE utf8_spanish2_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
+
