@@ -1,7 +1,7 @@
 <?php
 
 include('db.php');
-/*
+/* se realiza la prueba si llega la informacion por post
 if (isset($_POST['guardar'])){
 
   $nombre = $_POST['nombre'];
