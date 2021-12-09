@@ -30,7 +30,7 @@ if (isset($_POST['update'])) {
 
   $query = "UPDATE estudiante set nombre = '$nombre', apellido = '$apellido', dni = '$dni', correo = '$correo', sexo = '$sexo' WHERE id=$id";
   mysqli_query($conn, $query);
-  $_SESSION['message'] = 'Task Updated Successfully';
+  $_SESSION['message'] = 'Alumno editado corectamente';
   $_SESSION['message_type'] = 'warning';
   header('Location: index.php');
 }
