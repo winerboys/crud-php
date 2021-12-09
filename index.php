@@ -74,7 +74,7 @@
               <a href="edit.php?id=<?php echo $row['id']?>" class="btn btn-secondary">
                 <i class="fas fa-marker"></i>
               </a>
-              <a href="delete_task.php?id=<?php echo $row['id']?>" class="btn btn-danger">
+              <a href="eliminar.php?id=<?php echo $row['id']?>" class="btn btn-danger">
                 <i class="far fa-trash-alt"></i>
               </a>
             </td>

@@ -1,5 +1,5 @@
 *Plataforma Base:
--php 8
+-php 7 en adelante
 -Base de Datos(mysql)
 *Pre requesitos de Instalacion :
 -Poseer una version Actualizada de cualquier navegador WED(Chorme,Morzilla Firefox,Edge)
